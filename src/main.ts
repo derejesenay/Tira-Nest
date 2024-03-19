@@ -4,10 +4,10 @@ import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const config = new DocumentBuilder()
-    .setTitle('Perago Information systems')
+    .setTitle('Tira Trading PLC')
     .setDescription('Organizational Hierarchy')
     .setVersion('1.0')
-    .addTag('PIS')
+    .addTag('TTP')
     .build();
   app.enableCors();
   const document = SwaggerModule.createDocument(app, config);
